@@ -1,0 +1,28 @@
+{
+  "name": "a-christmas-card-generator",
+  "version": "0.0.1",
+  "description": "A JavaScript-based generator for GIF-Christmas-Cards",
+  "type": "module",
+  "main": "index.js",
+  "watch": {
+    "debug": "src"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node start.js",
+    "build": "node build.js && webpack",
+    "prebuild": "npm install && npm run check",
+    "check": "eslint src/js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^14.3.2",
+    "eslint": "^8.7.0",
+    "express": "^4.17.1",
+    "fs-extra": "^10.0.0",
+    "gif.js": "^0.2.0",
+    "open": "^8.4.0",
+    "webpack": "^5.67.0"
+  }
+}
